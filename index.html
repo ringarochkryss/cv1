@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PETRA MELLBRAND</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+   <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    
+    
+   
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/queue-async/1.0.7/queue.min.js"></script>
+</head>
+
+<body class="d-flex h-100 w-100 aligner no-gutters">
+
+<!–– .................First row  Circles and similarities..................................................... -->
+<div class="container container-fluid aligner w-100 h-100">
+<div class="row w-100 h-100">
+    
+    
+        <!–– .................Presentation MD................................ -->
+    <div class="col-xs-12 col-lg-4 d-none d-md-block d-lg-none">
+        <!–– myNAme -->
+        <div class="col-12 aligner text-center">
+            <h1 class="text-center my-auto presentation">Petra Mellbrand</h1>
+        </div>
+    </div>
+    
+    
+    <!–– .................circle 1................................ -->
+    <div class="col-xs-12 col-md-6 col-lg-4 d-flex mx-auto">
+        <!–– Web Dev. - Orchestration - Production Skill Levels -->
+         <div class="col-12 mx-auto">
+                         <h3 class="headertext">Click around</h3>
+            <div id="per-cat-chart" class="d-flex mr-auto"></div>
+            <div id="reset" class="col-12 row"> <a class="reset" href="javascript:dc.filterAll(); dc.renderAll();"></h3>Reset</h3></a></div>
+        </div>
+    </div>
+    
+    <!–– .................Presentation All but MD................................ -->
+    <div class="col-xs-12 col-lg-4 d-md-none d-lg-block d-flex">
+        <!–– myNAme -->
+        <div class="col-12 aligner text-center">
+            <h1 class=" my-auto presentation">Petra<br>Mellbrand</h1>
+        </div>
+    </div>
+    
+<!–– .................Circle 2 Tools................................ -->
+    <div class="col-xs-12 col-md-6 col-lg-4 d-flex aligner align-items-center">
+        <!–– Skill Level for Each Tool -->
+        <div class="col-12">
+        <div id="per-name-chart" class="d-flex aligner align-items-center"></div>
+    </div>
+</div>
+
+<!–– I can do the DC-charts responsive setting width to null but they all get the same width and the bar chart is col-12 all the time,
+this is the most ugly workaround -I know. Sorry for that. --> 
+
+<!–– .................Bar Chart XS RESPONSIVE................................ -->    
+  <div class="row col-12 d-sm-none">  
+    <div class="col-12">
+     <!–– Skill Level for Each Tool -->
+        <h3 class="headertext">Toolbox XS</h3>
+        <div id="bar-chartxs"></div>
+    </div>
+  </div>
+  
+  <!–– .................Bar Chart SM RESPONSIVE................................ -->    
+  <div class="row col-12 d-none d-sm-block d-md-none">  
+    <div class="col-12">
+     <!–– Skill Level for Each Tool -->
+        <h3 class="headertext">Toolbox SM</h3>
+        <div id="bar-chartsm"></div>
+    </div>
+  </div>
+  
+  <!–– .................Bar Chart MD................................ -->    
+  <div class="row d-none d-md-block d-lg-none">  
+    <div class="col-12">
+     <!–– Skill Level for Each Tool -->
+        <h3 class="headertext">Toolbox MD</h3>
+        <div id="bar-chartmd"></div>
+    </div>
+  </div>
+  
+    <!–– .................Bar Chart LG................................ --> 
+    <div class="row d-none d-lg-block d-xl-none">  
+        <div class="col-12">
+     <!–– Skill Level for Each Tool -->
+        <h3 class="headertext">Toolbox LG</h3>
+        <div id="bar-chartlg"></div>
+    </div>
+  </div>
+
+    <!–– .................Bar Chart XL................................ --> 
+    <div class="row d-none d-xl-block">  
+        <div class="col-12">
+     <!–– Skill Level for Each Tool -->
+        <h3 class="headertext">Toolbox XL</h3>
+        <div id="bar-chartxl"></div>
+    </div>
+  </div>
+
+
+
+ <!–– .................CV Timeline..................................................... -->
+
+      <div class=" col-12 row timeline text-center container aligner no-gutters mx-1">
+        
+
+    
+       
+      <!––........ Musikhögskolan............................................ -->
+    <div class="col-12 col-md-4 col-lg-2 timeline-section1 textblack no-gutters">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <img src="/data/LUu.png" class="rounded-circle img-thumbnail mt-2 greyify">
+              <p>Education</p>
+              <div class="borders"></div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-bottom">
+              <h1 class="headertext mt-3">1996</h1>
+              <p><strong>Malmo<br>Academy<br>of Music</strong><br>Teaching<br>Music<br>
+              <br>Writing Music<br>Orchestration<br>Arranging</p>
+          </div>
+      </div>
+    </div>
+    <!––........ Backaskolan............................................ -->
+    <div class="col-12 col-md-4 col-lg-2 timeline-section2 textblue no-gutters">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-top">
+              <p><strong>Teacher</strong><br><br>Swedish<br>Music</p>
+              <h1 class="headertext">2000</h1>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <div class="borders"></div>
+              <p>Work</p>
+              <img src="/data/dir.PNG" class="rounded-circle img-thumbnail greyify">
+          </div>
+      </div>
+    </div>
+    <!––........ AMK............................................ -->
+    <div class="col-12 col-md-4 col-lg-2 timeline-section1 textblack no-gutters">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <img src="/data/amk.PNG" class="rounded-circle img-thumbnail mt-2 greyifyalittle">
+              <p>Education</p>
+              <div class="borders"></div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-bottom">
+              <h1 class="headertext mt-3">1999</h1>
+              <p><strong>Band of the<br>Swedish<br>Army</strong><br>Music Soldier<br><br>
+              <strong>Military Music<br>Academy</strong><br>Drum Major<br>Leadership</p>
+          </div>
+      </div>
+    </div>
+    <!––........ Brandkåren............................................ -->
+    <div class="col-12 col-md-4 col-lg-2 timeline-section2 textblue no-gutters">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-top">
+              <p><strong>Fire Brigade Band</strong><br><br> Arranger<br>Production</p>
+              <h1 class="headertext">2007</h1>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <div class="borders"></div>
+              <p>Work</p>
+              <img src="/data/mbm.PNG" class="rounded-circle img-thumbnail greyify">
+          </div>
+      </div>
+    </div>
+    <!––........ Code Institute............................................ -->
+    <div class="ccol-12 col-md-4 col-lg-2 timeline-section1 textblack no-gutters">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <img src="/data/codeins.PNG" class="rounded-circle img-thumbnail greyify">
+              <p>Education</p>
+              <div class="borders"></div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-bottom">
+              <h1 class="headertext mt-3">2019</h1>
+              <p><strong>Code Institute</strong><br>Student<br>Full Stack <br>Web Developer<br>Javascript/Python<br><br>
+              <strong>Prof.Scrum Master<br>PSM1</strong><br>Scrum.org<br></p>
+          </div>
+      </div>
+    </div>
+    <!––........ Web Dev First job............................................ -->
+    <div class="col-12 col-md-4 col-lg-2 timeline-section2 textblue no-gutters ">
+      <div class="row no-gutters">
+          <div class="col-lg-12 col-md-12 col-6 timeline-content-top">
+              <p><strong>Web Developer</strong><br><br>Full Stack<br>Hire me!<br></p>
+              <h1 class="headertext">2019</h1>
+          </div>
+          <div class="col-lg-12 col-md-12 col-6 timeline-icon-section">
+              <div class="borders"></div>
+              <p>1, 2, 3...</p>
+              <img src="/data/new.PNG" class="rounded-circle img-thumbnail">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div Class="mt-14 between">MELLANRUMSDIV</div>
+
+<!–– .................Portfolio..................................................... -->
+<div class="row no-gutters">
+    
+    <div class="col-xs-12 col-md-8">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="headertext  ml-5 mb-3 dottedborderbottom">Portfolio</h2>
+            </div>
+        </div>
+    
+        <div class="row col-xs-12">
+            <div class="col-xs-12 col-md-5">
+                <div class="text-center similarities">
+                    <img src="/data/svanen.PNG" class="img-thumbnail greyify">
+                    <h3 class ="headertext">Searching</h3>
+                    <p>Data Source: XML<br>Tools: PHP, Javascript, Html & CSS</p>
+                </div>
+                
+                <div class="text-center similarities2">
+                    <img src="/data/monkees.PNG" class="img-thumbnail mt-2 greyify">
+                    <h3 class ="headertext">Band Website</h3>
+                    <p>If Bootstrap 4 was invented in the 60:s<br>Listen to music and wath a movie<br>Tools: Html & CSS</p>
+                </div>
+            </div>
+    
+            <div class="col-xs-12 col-md-5 mb-3">
+                <div class="text-center similarities">
+                    <img src="/data/livedive.PNG" class="img-thumbnail greyify">
+                    <h3 class ="headertext">Live Dive</h3>
+                    <p><strong>Pool practice App</strong><br>Choose a level and get random dives to perform<br>
+                     Bubblegraps, Maps and Search Dives to see the Difficulty of each dive<br>Data Source: json<br>
+                     Tools: D3, Javascript, Html & SCSS</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+<!–– .................Similarities................................ -->
+        <div class="col-xs-12 col-md-4">
+        <div class="row">
+            <div class="col-xs-12mt-3">
+                <h2 class="headertext mt-15 ml-5 mb-3 dottedborderbottom">Music/Web</h2>
+            </div>
+        </div>
+    
+    <div class="col-xs-12 similarities">
+    
+        <div class="row col-12 mt-3">
+        <!–– ........................................................................... -->    
+            <h4 class="aligner headertext ml-5">Collaboration</h4></span>
+            <div class="col-12 aligner">
+                <div class=" row col-5 aligner mx-2">
+                    <span><img src="/data/femband.PNG" class="img-thumbnail mt-2"><br>
+                    <p>...listen to everyone...</p></span>
+                </div>
+                
+                <div class="col-2 aligner">
+                    <span class="arrow1 mx-2"><i class="fas fa-arrows-alt-h"></i></span>
+                </div>
+                
+                <div class="col-5 aligner mx-2">
+                     <span><img src="/data/team2.PNG" class="img-thumbnail mt-2 greyify"><br>
+                    <p>...to hear the music</p></span>
+                </div>
+            </div>
+        <!–– ........................................................................... -->     
+                        <h4 class="aligner headertext ml-5">Patience</h4></span>
+            <div class="col-12 aligner">
+                <div class=" row col-5 aligner mx-2">
+                    <span><img src="/data/rest.PNG" class="img-thumbnail mt-2"><br>
+                    <p>when stuck, take a deep breath...</p></span>
+                </div>
+                
+                <div class="col-2 aligner">
+                    <span class="arrow1 mx-2"><i class="fas fa-arrows-alt-h"></i></span>
+                </div>
+                
+                <div class="col-5 aligner mx-2">
+                     <span><img src="/data/curly.PNG" class="img-thumbnail mt-2"><br>
+                    <p>...rest and REST<br>
+                    embrack-it!</p></span>
+                </div>
+            </div>
+       <!–– ........................................................................... -->              
+                        <h4 class="aligner headertext ml-5">Right on time</h4></span>
+            <div class="col-12 aligner">
+                <div class=" row col-5 aligner mx-2">
+                    <span><img src="/data/conductor.PNG" class="img-thumbnail mt-2"><br>
+                    <p>Actually it's work in between...</p></span>
+                </div>
+                
+                <div class="col-2 aligner">
+                    <span class="arrow1 mx-2"><i class="fas fa-arrows-alt-h"></i></span>
+                </div>
+                
+                <div class="col-5 aligner mx-2">
+                     <span><img src="/data/sprint.PNG" class="img-thumbnail mt-2 greyify"><br>
+                    <p>...that matters</p></span>
+                </div>
+            </div>
+        <!–– ........................................................................... -->         
+                        <h4 class="aligner headertext ml-5">Obvious</h4></span>
+            <div class="col-12 aligner">
+                <div class=" row col-5 aligner mx-2">
+                    <span><img src="/data/csharpnote.PNG" class="img-thumbnail mt-2"><br>
+                    <p> See sharp...</p></span>
+                </div>
+                
+                <div class="col-2 aligner">
+                    <span class="arrow1 mx-2"><i class="fas fa-arrows-alt-h"></i></span>
+                </div>
+                
+                <div class="col-5 aligner mx-2">
+                     <span><img src="/data/csharp.PNG" class="img-thumbnail mt-2"><br>
+                    <p>...the rest is syntax...</p></span>
+                </div>
+            </div>
+        
+            
+        </div>
+    </div>
+   
+   
+           </div>
+    </div> 
+</div>
+</div>
+  
+   
+</div>
+</div>
+
+
+    
+    <script>
+        queue()
+            .defer(d3.json, "data/petrascv.json")
+            .await(makeGraphs);
+        
+        function makeGraphs(error, transactionsData) {
+            var ndx = crossfilter(transactionsData);
+        
+        
+        //Circle Categories    
+            var cat_dim = ndx.dimension(dc.pluck('cat'));
+            var total_level_per_cat = cat_dim.group().reduceSum(dc.pluck('level'));
+            dc.pieChart('#per-cat-chart')
+                .legend(dc.legend().x(130).y(55).gap(15))
+                .width(null) 
+                .height(null)
+                .radius(450)
+                .innerRadius(400)
+                .transitionDuration(1500)
+                .dimension(cat_dim)
+                .group(total_level_per_cat)
+                .ordinalColors(['black', '#FFC300', '#212F3C', '#34495E', '#212F3D', '#17202A',  '#c2c2a3']);
+                
+                        //Circle Names and level    
+            var name_dim = ndx.dimension(dc.pluck('name'));
+            var total_level_per_name = name_dim.group().reduceSum(dc.pluck('level'));
+            dc.pieChart('#per-name-chart')
+                .width(null)//null will make it responsive (follow its element)
+                .height(null)
+                .radius(450)
+                .slicesCap(25)
+                .transitionDuration(1500)
+                .dimension(name_dim)
+                .group(total_level_per_name)
+                //.colors(d3.scale.category20b());
+                .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#c2c2a3', '#FFC300']);
+         
+          
+    //Barchart responsive for XS
+        var name_dim = ndx.dimension(dc.pluck('name'));
+        var total_level_by_name = name_dim.group().reduceSum(dc.pluck('level'));
+        var total_chart = dc.barChart('#bar-chartxs');
+        total_chart
+            .margins({ top: 10, left: 30, right: 10, bottom: 100 }) 
+            .width(null)
+            .height(null)
+            .dimension(name_dim)
+            .group(total_level_by_name)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal) 
+            .colorAccessor(d => d.key)
+            .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3']);
+  
+  //Barchart responsive for SM
+        var name_dim = ndx.dimension(dc.pluck('name'));
+        var total_level_by_name = name_dim.group().reduceSum(dc.pluck('level'));
+        var total_chart = dc.barChart('#bar-chartsm');
+        total_chart
+            .margins({ top: 10, left: 30, right: 10, bottom: 100 }) 
+            .width(560)
+            .height(null)
+            .dimension(name_dim)
+            .group(total_level_by_name)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal) 
+            .colorAccessor(d => d.key)
+            .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3']);
+  
+  
+  
+      //Barchart for MD
+    //Since the responsive Barchart follows the circles and goes to col-6 on medium -I specify width to get col-12(ish)
+  var name_dim = ndx.dimension(dc.pluck('name'));
+        var total_level_by_name = name_dim.group().reduceSum(dc.pluck('level'));
+        var total_chart = dc.barChart('#bar-chartmd');
+        total_chart
+            .margins({ top: 10, left: 30, right: 10, bottom: 100 }) 
+            .width(755)
+            .height(350)
+            .dimension(name_dim)
+            .group(total_level_by_name)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal) 
+            .colorAccessor(d => d.key)
+            .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3']);
+            
+                  //Barchart for LG
+    //Since the responsive Barchart follows the circles and goes to col-4 on lg -I specify width to get col-12(ish)
+  var name_dim = ndx.dimension(dc.pluck('name'));
+        var total_level_by_name = name_dim.group().reduceSum(dc.pluck('level'));
+        var total_chart = dc.barChart('#bar-chartlg');
+        total_chart
+            .margins({ top: 10, left: 30, right: 10, bottom: 100}) 
+            .width(992)
+            .height(350)
+            .dimension(name_dim)
+            .group(total_level_by_name)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal) 
+            .colorAccessor(d => d.key)
+            .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3']);
+            
+                              //Barchart for XL
+    //Since the responsive Barchart follows the circles and goes to col-4 on lg -I specify width to get col-12(ish)
+  var name_dim = ndx.dimension(dc.pluck('name'));
+        var total_level_by_name = name_dim.group().reduceSum(dc.pluck('level'));
+        var total_chart = dc.barChart('#bar-chartxl');
+        total_chart
+            .margins({ top: 10, left: 30, right: 10, bottom: 100 }) 
+            .width(1200)
+            .height(350)
+            .dimension(name_dim)
+            .group(total_level_by_name)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal) 
+            .colorAccessor(d => d.key)
+            .ordinalColors(['black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3']);
+  
+  
+  
+  
+            
+            dc.renderAll();
+            
+    total_chart.on("postRender", function(chart) {
+    chart.select('.axis.x')
+         .attr("text-anchor", "end")
+         .selectAll("text")
+         .attr("transform", "rotate(-90)")
+         .attr("dy", "-0.7em")
+         .attr("dx", "-3.5em");
+  });
+            
+        }
+        
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
