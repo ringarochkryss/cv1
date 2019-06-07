@@ -14,7 +14,7 @@ Welcome to Petra Mellbrands web-cv.
 
 * DC Crossfilter displayed skills -What I know!
 * CV
-* Box about the music and web developer -as you might wonder. Why this change? And is it drastic or logic?
+* Box about music and web development -as you might wonder. Why this change? And is it drastic or logic?
 * Portfolio
 * contact information
 
@@ -33,7 +33,7 @@ This site is for you.
 
 ### Layout & UX 
 I made a light theme with a image and some colorful charts with skills. 
-It should be:
+I use bootstrap grid for a responsive site containing:
 * My skills
 * My experience
 * Me
@@ -44,7 +44,7 @@ It should be:
 ### Features
 * User can read a quick CV with education and work history
 * User can see what skills I developed in three categories
-* User can see a small though about music and web development
+* User can read a comment about music and web development (opening up for discussion)
 * User can get contact information
 * User can download pdf:s with Cv
 * User can access social media and Linkedin
@@ -55,6 +55,7 @@ It should be:
 * html5 
 * Css
 * Bootstrap 4 (Javascript and Jquery) 
+* Javascript (and DC, Crossfilter)
 
 
 ---
