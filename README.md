@@ -1,10 +1,8 @@
 
-# THE BAND PAGE 
+# PETRA MELLBRAND
 <img src= "https://user-images.githubusercontent.com/47560139/57042668-af4bfc00-6c65-11e9-86f1-780f10328053.png" width="70">
-The Monkees in Swedish colors  -now that's something!
 
-First Milestone Project at Code Institute 
-https://ringarochkryss.github.io/milestone1/
+https://ringarochkryss.github.io/cv1/
 
 ---
 
