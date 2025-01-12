@@ -1,12 +1,5 @@
 /*
-ljusgreen: #DAF7A6;
-grey:#c2c2a3;
-gul:#FFC300
-darkestblue:#17202A
-lighterblue: #212F3C
-black', '#17202A', '#212F3D', '#34495E', '#212F3C', '#FFC300', '#c2c2a3
-transpgrey: rgb(38, 38, 38)
-grey: #737373;
+
 
 font-family: 'Julius Sans One', sans-serif;
 
@@ -25,24 +18,50 @@ font-family: 'Julius Sans One', sans-serif;
 
 body {
     width:100%;
-    margin-top: 30px;
     margin-right: auto;
-    background-image: url("data/petra3vit.PNG"), linear-gradient(to right, #FFC300, white, white, white, white, white);
-    background-repeat: no-repeat;
-    background-position:top, center;
     background-color:white;
 }
+
+.navbar {
+    background-image: url("data/1.png");
+    height: 250px;
+}
+
+    @media only screen and (max-width: 1100px) {
+        .navbar {
+            height: 50px;
+            background-image: url("data/2.png");
+        }
+    }
 
 a {
     text-decoration: none;
 }
 
-/*Petras name in the middle................................*/
-.presentation{
-    font-family: 'Julius Sans One', sans-serif;
-    font-size:3em;
-    color:#FFC300;
+.btn-light .bg-lightblue {
+    line-height: 14px;
+    height: 25px;
+    
 }
+
+.bg-lightblue {
+    background-color: rgb(119, 195, 236) !important;
+    float: right;
+}
+
+.centered-button {
+    float:none;
+}
+
+.lightblueText {
+    color: rgb(119, 195, 236);
+}
+    /*Petras name in the middle................................*/
+    .presentation {
+        font-family: 'Julius Sans One', sans-serif;
+        font-size: 3em;
+        color: #77c3ec;
+    }
 
 
 /*Chart Titles and other titles................................*/
@@ -58,31 +77,39 @@ a {
 }
 
 /*DC styling Pie Charts................................*/
+
+
 .per-cat-chart g.row text {
     fill: black;
-    
 }
 
-
+.dc-chart .pie-slice {
+    fill: black !important;
+    font-size: 9px;
+    overflow: hidden;
+}
 /*DC styling Bar Charts................................*/
- .x.axis text {
-    transform: rotate(-70deg);
+.x.axis text {
+    transform: rotate(-60deg);
     text-anchor: end !important;
-} 
+    margin-bottom:10px;
+    margin-right:3px;
+}
+
 
 /*Text styling................................*/
 .dottedborder{
-    border: 3px dotted #FFC300;
+    border: 3px dotted #4800ff;
 }
 
-.dottedborderround{
-    border: 4px dotted #FFC300;
+.dottedborderround {
+    border: 4px dotted #4800ff;
     padding: 20px;
-    border-radius:90px;
+    border-radius: 90px;
 }
 
-.dottedborderbottom{
-    border-bottom: 4px dotted #FFC300;
+.dottedborderbottom {
+    border-bottom: 4px dotted #4800ff;
 }
 
 
@@ -91,19 +118,19 @@ a {
 /*Portfolio section................................*/
 .similarities{
     background-color: #f5f5f0;
-    border: 2px dotted #FFC300;
+    border: 2px dotted #77c3ec;
 }
 
 .similarities2{
     background-color: white;
-    border-bottom: 2px dotted #FFC300;
-    border-left: 2px dotted #FFC300;
-    border-right: 2px dotted #FFC300;
+    border-bottom: 2px dotted #77c3ec;
+    border-left: 2px dotted #77c3ec;
+    border-right: 2px dotted #77c3ec;
 }
 
 .arrow1{
     font-size: 55px;
-    color: #17202A;
+    color: darkviolet;
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -122,7 +149,7 @@ a {
 
 .textblack{
     color:black;
-    border:2px dotted #FFC300;
+    border:2px dotted #77c3ec;
 }
 
 
@@ -132,60 +159,60 @@ a {
 }
     /*Abow............*/
 .timeline-section1 .timeline-icon-section,
-.timeline-section2 .timeline-content-top{
+.timeline-section2 .timeline-content-top {
     position: relative;
-    border-bottom: 20px solid #17202A; /*Arrow width 1,3,5............*/
-    height:240px;/*Height top part(above a w arrow) of 1,3,5............*/
+    border-bottom: 20px solid #d4b3e2; /*Arrow width 1,3,5............*/
+    height: 240px; /*Height top part(above a w arrow) of 1,3,5............*/
 }
 
 
-.timeline-section1 .timeline-icon-section:after{   /*pilspets the rest of them ............*/
-    content: " ";
-    position:absolute; 
-    top:220px;
-    right: 0px;
-    border:10px solid transparent;
-    border-left-color: #17202A;
-}
-.timeline-section1 .timeline-icon-section:before{    /*Pilspets first...............*/
-    content: " ";
-    position:absolute; 
-    top:220px;
-    left:0px;
-    border:10px solid transparent;
-    border-left-color:#737373;
-}
+    .timeline-section1 .timeline-icon-section:after { /*pilspets the rest of them ............*/
+        content: " ";
+        position: absolute;
+        top: 220px;
+        right: 0px;
+        border: 10px solid transparent;
+        border-left-color: #d4b3e2;
+    }
+    .timeline-section1 .timeline-icon-section:before { /*Pilspets first...............*/
+        content: " ";
+        position: absolute;
+        top: 220px;
+        left: 0px;
+        border: 10px solid transparent;
+        border-left-color: #b8e2e2;
+    }
 
 .timeline-content-bottom{  /*Text under 1,3,5...............*/
     border-top:20px;
     overflow:hidden;
 }
 
-.timeline-section2 .timeline-icon-section:after{ /*Pilspetsar efter...............*/
+.timeline-section2 .timeline-icon-section:after { /*Pilspetsar efter...............*/
     content: " ";
-    position:absolute; 
-    top:-20px;
+    position: absolute;
+    top: -20px;
     right: 0px;
-    border:10px solid transparent;
-    border-left-color:#737373;
+    border: 10px solid transparent;
+    border-left-color: #b8e2e2;
 }
-.timeline-section2 .timeline-icon-section:before{ /*Pilspetsar before...............*/
+.timeline-section2 .timeline-icon-section:before { /*Pilspetsar before...............*/
     content: " ";
-    position:absolute; 
-    top:-20px;
-    left:0px;
-    border:10px solid transparent;
-    border-left-color:#17202A; 
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    border: 10px solid transparent;
+    border-left-color: #d4b3e2;
 }
 
-.timeline-section2 .timeline-content-top{ /*the jobs ...............*/
-    border-bottom:20px solid #737373;
+.timeline-section2 .timeline-content-top { /*the jobs ...............*/
+    border-bottom: 20px solid #b8e2e2;
     padding-top: 0px;
-     height:175px;
+    height: 175px;
 }
 
 .timeline-section2 .timeline-icon-section img{
-    border: 2px dotted #FFC300;
+    border: 2px dotted #77c3ec;
 } 
 
 .timeline-content-bottom h1,.timeline-content-top h1{
@@ -194,7 +221,7 @@ a {
 }
 
 .timeline-icon-section img{
-    border: 2px dotted #FFC300;
+    border: 2px dotted #77c3ec;
     width: 130px;
     height: 130px;
 }
@@ -230,12 +257,12 @@ a {
 
 /*Images................................*/
 
-.greyify{
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+/*.greyify{
+    -webkit-filter: grayscale(100%);*/ /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(100%);
 }
 
 .greyifyalittle{
-    -webkit-filter: grayscale(70%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(70%);
-}
+    -webkit-filter: grayscale(70%);*/ /* Safari 6.0 - 9.0 */
+    /*filter: grayscale(70%);
+}*/

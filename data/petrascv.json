@@ -1,29 +1,298 @@
 [
-    {"date": "2018", "name": "Html", "cat": "Web", "exp": 1, "level": 70, "reset":"reset"},
-    {"date": "2018", "name": "Css", "cat": "Web", "exp": 1, "level": 70, "reset":"reset"},
-    {"date": "2018", "name": "Javascript", "cat": "Web", "exp": 1, "level": 50, "reset":"reset"},
-    {"date": "2015", "name": "Photoshop", "cat": "Web", "exp": 3, "level": 20, "reset":"reset"},
-    {"date": "2019", "name": "D3/DC", "cat": "Web", "exp": 1, "level": 40, "reset":"reset"},
-    {"date": "2007", "name": "Sibelius", "cat": "Orchestration", "exp": 12, "level": 90, "reset":"reset"},
-    {"date": "2000", "name": "Cubase", "cat": "Orchestration", "exp": 10, "level": 50, "reset":"reset"},
-    {"date": "1999", "name": "MS Office", "cat": "Production", "exp": 20, "level": 80, "reset":"reset"},
-    {"date": "2019", "name": ".net", "cat": "Web", "exp": 0.1, "level": 5, "reset":"reset"},
-    {"date": "2017", "name": "Web Design", "cat": "Web", "exp": 3, "level": 40, "reset":"reset"},
-    {"date": "2015", "name": "Fortnox", "cat": "Production", "exp": 3, "level": 50, "reset":"reset"},
-    {"date": "2019", "name": "Python", "cat": "Web", "exp": 0.1, "level": 25, "reset":"reset"},
-    {"date": "2019", "name": "Flask", "cat": "Web", "exp": 0.1, "level": 35, "reset":"reset"},
-    {"date": "2019", "name": "Django", "cat": "Web", "exp": 0.1, "level": 5, "reset":"reset"},
-    {"date": "2019", "name": "PHP", "cat": "Web", "exp": 0.1, "level": 5, "reset":"reset"},
-    {"date": "2019", "name": "Visual Studio", "cat": "Web", "exp": 0.1, "level": 10, "reset":"reset"},
-    {"date": "2019", "name": "C9", "cat": "Web", "exp": 1, "level": 10, "reset":"reset"},
-    {"date": "2019", "name": "Git", "cat": "Web", "exp": 1, "level": 30, "reset":"reset"},
-    {"date": "2018", "name": "Sublime", "cat": "Web", "exp": 1, "level": 50, "reset":"reset"},
-    {"date": "2013", "name": "In Sales", "cat": "Production", "exp": 6, "level": 60, "reset":"reset"},
-    {"date": "2017", "name": "Ux", "cat": "Web", "exp": 2, "level": 30, "reset":"reset"},
-    {"date": "2012", "name": "Finale", "cat": "Orchestration", "exp": 5, "level": 30, "reset":"reset"},
-    {"date": "2011", "name": "Production", "cat": "Production", "exp": 8, "level": 55, "reset":"reset"},
-    {"date": "2011", "name": "Pojects", "cat": "Production", "exp": 8, "level": 65, "reset":"reset"},
-    {"date": "2018", "name": "Scrum", "cat": "Production", "exp": 1, "level": 55, "reset":"reset"},
-    {"date": "2000", "name": "Pedagogik", "cat": "Education", "sexp": 10, "level": 90, "reset":"reset"},
-    {"date": "2010", "name": "Research", "cat": "Education", "exp": 2, "level": 65, "reset":"reset"}
+  {
+    "date": "2018",
+    "name": "Html",
+    "cat": "Web",
+    "exp": 1,
+    "level": 70,
+    "reset": "reset"
+  },
+  {
+    "date": "2018",
+    "name": "Css",
+    "cat": "Web",
+    "exp": 1,
+    "level": 70,
+    "reset": "reset"
+  },
+  {
+    "date": "2018",
+    "name": "Javascript",
+    "cat": "Web",
+    "exp": 1,
+    "level": 50,
+    "reset": "reset"
+  },
+  {
+    "date": "2015",
+    "name": "Photoshop",
+    "cat": "Web",
+    "exp": 3,
+    "level": 20,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "D3/DC",
+    "cat": "Web",
+    "exp": 1,
+    "level": 40,
+    "reset": "reset"
+  },
+  {
+    "date": "2007",
+    "name": "Sibelius",
+    "cat": "Orchestration",
+    "exp": 12,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "1999",
+    "name": "MS Office",
+    "cat": "Management",
+    "exp": 20,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": ".Net",
+    "cat": "Web",
+    "exp": 5,
+    "level": 70,
+    "reset": "reset"
+  },
+  {
+    "date": "2017",
+    "name": "Web Design",
+    "cat": "Web",
+    "exp": 3,
+    "level": 40,
+    "reset": "reset"
+  },
+  {
+    "date": "2015",
+    "name": "Fortnox",
+    "cat": "Management",
+    "exp": 3,
+    "level": 50,
+    "reset": "reset"
+  },
+  {
+    "date": "2015",
+    "name": "Trello",
+    "cat": "Management",
+    "exp": 3,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Python",
+    "cat": "Web",
+    "exp": 0.1,
+    "level": 25,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Flask",
+    "cat": "Web",
+    "exp": 0.1,
+    "level": 35,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Django",
+    "cat": "Web",
+    "exp": 0.1,
+    "level": 5,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Azure DevOps",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Git",
+    "cat": "Web",
+    "exp": 1,
+    "level": 30,
+    "reset": "reset"
+  },
+  {
+    "date": "2017",
+    "name": "UX",
+    "cat": "Web",
+    "exp": 2,
+    "level": 30,
+    "reset": "reset"
+  },
+  {
+    "date": "2012",
+    "name": "Arranging",
+    "cat": "Orchestration",
+    "exp": 5,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2011",
+    "name": "Team Lead",
+    "cat": "Management",
+    "exp": 15,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2011",
+    "name": "Pojects",
+    "cat": "Management",
+    "exp": 8,
+    "level": 65,
+    "reset": "reset"
+  },
+  {
+    "date": "2018",
+    "name": "Scrum",
+    "cat": "Management",
+    "exp": 1,
+    "level": 55,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "Pedagogik",
+    "cat": "Learning",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "E-Learning",
+    "cat": "Learning",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "Learning Platforms",
+    "cat": "Learning",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2010",
+    "name": "Business Analyst",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2010",
+    "name": "Learning",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Scrum",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "Facilitate Workshops",
+    "cat": "Learning",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Product Owner",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "SQL",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "PostgreSQL",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "Implementations",
+    "cat": "Management",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2000",
+    "name": "Implementations",
+    "cat": "Learning",
+    "sexp": 10,
+    "level": 90,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "MongoDB",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "AWS cloud",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2019",
+    "name": "Azure AD Users",
+    "cat": "Web",
+    "exp": 5,
+    "level": 80,
+    "reset": "reset"
+  },
+  {
+    "date": "2010",
+    "name": "C#",
+    "cat": "Web",
+    "exp": 5,
+    "level": 65,
+    "reset": "reset"
+  }
 ]
